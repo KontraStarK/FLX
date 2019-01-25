@@ -1,0 +1,260 @@
+// Write your styles here
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $contentBackground;
+    font: $font;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh;
+    background-image: $headerBg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            img {
+                width: 50%;
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 350px;
+
+            a {
+                padding: 10px 110px 10px 110px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 500;
+                color: $colorNav;
+
+                &:nth-child(-n+2) {
+                    border-right: 2px solid $colorNavBord;
+                }
+            }
+        }
+    }
+
+    section {
+        text-align: center;
+
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $colorNav;
+        }
+
+        .btn-top {
+            display: inline-block;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+            background-color: $colorBtn;
+            width: 160px;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+            color: $colorW;
+        }
+    }
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 960px;
+
+    .toolbar {
+        display: flex;
+        justify-content: flex-end;
+
+        input {
+            margin: 20px;
+            margin-right: 10px;
+            padding: 10px 20px;
+        }
+    }
+
+    section {
+        article {
+            display: flex;
+            background-color: $colorG;
+            padding: 10px 15px 10px 10px;
+            margin-bottom: 20px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                .post {
+                    padding: 10px;
+
+                    .post-description {
+                        font-size: 13px;
+                        padding: 0px 0px 8px 8px;
+                        border-bottom: 1px solid $colorNavBord;
+                        color: $colorAdmin;
+                    }
+
+                    h3 {
+                        margin-top: 5px;
+                        text-transform: uppercase;
+                        color: $colorH3;
+                    }
+
+                    p {
+                        color: $colorHp;
+                        line-height: 1.6em;
+                    }
+                }
+
+                .btn {
+                    align-self: flex-end;
+                    text-align: center;
+                    background-color: $colorBtn;
+                    width: 170px;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    border: none;
+                    color: #fff;
+                }
+            }
+        }
+
+        .container {
+            input {
+                width: 30%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .area {
+                width: 100%;
+            }
+
+            .btn {
+                text-align: center;
+                background-color: $colorBtn;
+                width: 170px;
+                padding: 10px;
+                text-transform: uppercase;
+                border: none;
+                color: #fff;
+            }
+        }
+
+        h1,
+        h4 {
+            text-transform: uppercase;
+            text-align: end;
+            color:$colorHp;
+        }
+    }
+
+    .about {
+        p {
+            color:$colorHp;
+            padding-bottom: 20px;
+        }
+
+        margin-top: 40px;
+        padding: 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .form {
+        width: 100%;
+
+        .top-form {
+            display: flex;
+            justify-content: space-between;
+
+            .label {
+                color: $colorH3;
+                text-align: right;
+
+                &:after {
+                    content: ' *';
+                    color: $colorH3;
+                }
+            }
+        }
+
+        .top-form,
+        .bottom-form {
+            width: 100%;
+            min-height: 65px;
+            margin: 10px 0;
+        }
+        input,textarea{
+            background-color: inherit;
+        }
+
+        input[type="text"] {
+            padding: 10px 5px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid $colorNavBord;
+        }
+
+        textarea {
+            padding: 35px 5px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid $colorNavBord;
+        }
+
+        .top-form {
+            .inner-form {
+                width: 475px;
+            }
+        }
+
+        .bottom-form {
+            .inner-form {
+                .label {
+                    color: $colorH3;
+                    text-align: right;
+                }
+            }
+        }
+
+        .btn-r {
+            display: flex;
+            justify-content: flex-end;
+
+            .btn {
+                text-align: center;
+                background-color: $colorBtn;
+                width: 170px;
+                padding: 10px;
+                text-transform: uppercase;
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+}

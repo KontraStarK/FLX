@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #efefef;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+.main-wrapper {
+  margin: 0 auto; }
+
+header {
+  height: 100vh;
+  background-image: url(../img/header_background_v2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo img {
+      width: 50%; }
+    header .top-wrapper nav {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 350px; }
+      header .top-wrapper nav a {
+        padding: 10px 110px 10px 110px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        color: #ff5722; }
+        header .top-wrapper nav a:nth-child(-n+2) {
+          border-right: 2px solid #cfd8dc; }
+  header section {
+    text-align: center; }
+    header section h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #ff5722; }
+    header section .btn-top {
+      display: inline-block;
+      text-align: center;
+      margin: auto;
+      margin-top: 10px;
+      background-color: #0401ac;
+      width: 160px;
+      padding: 10px;
+      text-transform: uppercase; }
+    header section a {
+      text-decoration: none;
+      color: #fff; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 960px; }
+  main .toolbar {
+    display: flex;
+    justify-content: flex-end; }
+    main .toolbar input {
+      margin: 20px;
+      margin-right: 10px;
+      padding: 10px 20px; }
+  main section article {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15px 10px 10px;
+    margin-bottom: 20px; }
+    main section article div {
+      display: flex;
+      flex-direction: column; }
+      main section article div .post {
+        padding: 10px; }
+        main section article div .post .post-description {
+          font-size: 13px;
+          padding: 0px 0px 8px 8px;
+          border-bottom: 1px solid #cfd8dc;
+          color: #bdbdbd; }
+        main section article div .post h3 {
+          margin-top: 5px;
+          text-transform: uppercase;
+          color: #607d8b; }
+        main section article div .post p {
+          color: #757575;
+          line-height: 1.6em; }
+      main section article div .btn {
+        align-self: flex-end;
+        text-align: center;
+        background-color: #0401ac;
+        width: 170px;
+        padding: 10px;
+        text-transform: uppercase;
+        border: none;
+        color: #fff; }
+  main section .container input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  main section .container .area {
+    width: 100%; }
+  main section .container .btn {
+    text-align: center;
+    background-color: #0401ac;
+    width: 170px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    color: #fff; }
+  main section h1,
+  main section h4 {
+    text-transform: uppercase;
+    text-align: end;
+    color: #757575; }
+  main .about {
+    margin-top: 40px;
+    padding: 15px; }
+    main .about p {
+      color: #757575;
+      padding-bottom: 20px; }
+    main .about img {
+      width: 100%; }
+  main .form {
+    width: 100%; }
+    main .form .top-form {
+      display: flex;
+      justify-content: space-between; }
+      main .form .top-form .label {
+        color: #607d8b;
+        text-align: right; }
+        main .form .top-form .label:after {
+          content: ' *';
+          color: #607d8b; }
+    main .form .top-form,
+    main .form .bottom-form {
+      width: 100%;
+      min-height: 65px;
+      margin: 10px 0; }
+    main .form input, main .form textarea {
+      background-color: inherit; }
+    main .form input[type="text"] {
+      padding: 10px 5px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #cfd8dc; }
+    main .form textarea {
+      padding: 35px 5px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #cfd8dc; }
+    main .form .top-form .inner-form {
+      width: 475px; }
+    main .form .bottom-form .inner-form .label {
+      color: #607d8b;
+      text-align: right; }
+    main .form .btn-r {
+      display: flex;
+      justify-content: flex-end; }
+      main .form .btn-r .btn {
+        text-align: center;
+        background-color: #0401ac;
+        width: 170px;
+        padding: 10px;
+        text-transform: uppercase;
+        border: none;
+        color: #fff; }
+
+/*# sourceMappingURL=style2.css.map */
